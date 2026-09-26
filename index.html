@@ -78,6 +78,86 @@ nav a{transition:.35s ease}nav a:hover{color:var(--gold2);text-shadow:0 0 16px r
 @keyframes mirRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 .hero .eyebrow{animation:mirRise .8s .1s both}.hero h1{animation:mirRise .9s .2s both}.hero-copy>p:not(.eyebrow){animation:mirRise .9s .32s both}.hero .actions{animation:mirRise .9s .44s both}
 
+
+/* === MIR INTERIOR — MOBILE SIGNATURE UX === */
+html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+body{overflow-x:hidden}
+@media(max-width:900px){
+  .top{height:auto!important;background:rgba(5,5,4,.86)!important;backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px);box-shadow:0 8px 35px rgba(0,0,0,.28)}
+  .bar{height:72px!important;padding:0 18px!important}
+  .brand{font-size:23px!important;letter-spacing:2.8px!important}
+  .menu-btn{display:flex!important;width:42px;height:42px;border:1px solid rgba(214,179,106,.3);border-radius:50%;align-items:center;justify-content:center;background:rgba(214,179,106,.06);color:#f2d79a;box-shadow:0 0 20px rgba(214,179,106,.08);transition:.3s}
+  .menu-btn:active{transform:scale(.94);background:rgba(214,179,106,.14)}
+  nav{gap:0!important}
+  nav a{padding:14px 6px!important;font-size:13px!important;letter-spacing:1.8px!important}
+  .call{display:none!important}
+  .hero{height:calc(100svh - 0px)!important;min-height:620px!important;max-height:820px!important}
+  .hero-bg{background-position:58% center!important;transform:none!important}
+  .hero:after{background:linear-gradient(180deg,rgba(4,4,3,.1) 0%,rgba(4,4,3,.32) 42%,#070706 91%)!important}
+  .hero-copy{padding:0 22px 72px!important;display:flex;flex-direction:column;justify-content:flex-end;min-height:100%;max-width:680px}
+  .eyebrow{font-size:10px!important;letter-spacing:3px!important;margin-bottom:15px!important}
+  .hero h1{font-size:clamp(48px,14vw,72px)!important;line-height:.94!important;letter-spacing:-1.5px!important;margin-bottom:18px!important}
+  .hero-copy>p:not(.eyebrow){font-size:15px!important;line-height:1.65!important;max-width:330px!important;color:#d0c6b7!important}
+  .actions{display:grid!important;grid-template-columns:1fr 1fr;gap:10px!important;margin-top:24px!important}
+  .btn{min-height:52px!important;padding:0 13px!important;font-size:11px!important;letter-spacing:1.3px!important;border-radius:2px!important}
+  .intro{padding:92px 22px 78px!important}
+  .intro:before{top:30px!important;height:36px!important}
+  .intro h2{font-size:clamp(34px,10vw,52px)!important;line-height:1.05!important}
+  .lead{font-size:15px!important;line-height:1.75!important}
+  .shop{padding-top:74px!important}
+  .section-head{padding:0 22px!important}
+  .section-head h2{font-size:36px!important}
+  .layout{display:block!important}
+  .layout aside{display:none!important}
+  .grid{grid-template-columns:1fr!important;gap:18px!important;padding:0 18px!important}
+  .card{border-radius:2px!important;box-shadow:0 15px 45px rgba(0,0,0,.28)!important}
+  .card:active{transform:scale(.985)!important}
+  .card-img{height:72vw!important;max-height:390px!important}
+  .card-info{padding:19px 18px 20px!important}
+  .card h3{font-size:21px!important}
+  .card p{font-size:13px!important;line-height:1.65!important}
+  .explore{padding:9px 0!important}
+  .craft{padding:78px 18px!important}
+  .craft-img{border-radius:2px!important;box-shadow:0 20px 55px rgba(0,0,0,.5)!important}
+  .craft-copy{padding-top:34px!important}
+  .craft h2{font-size:37px!important;line-height:1.06!important}
+  .craft-copy>p:not(.eyebrow){font-size:14px!important;line-height:1.75!important}
+  .stats{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:8px!important;margin-top:26px!important;padding-top:18px!important}
+  .stats strong{font-size:22px!important}
+  .stats span{font-size:9px!important;letter-spacing:1px!important}
+  .feature{padding:72px 20px!important;display:flex!important;flex-direction:column!important;gap:30px!important}
+  .feature>div:before{display:none!important}
+  .feature h2{font-size:38px!important;line-height:1.05!important}
+  .feature>img{width:100%!important;max-height:420px!important;object-fit:cover!important}
+  .faq{padding:78px 20px!important}
+  .faq h2{font-size:38px!important}
+  .faq-list details{padding:18px 0!important}
+  .faq-list summary{font-size:15px!important;line-height:1.4!important}
+  .faq-list p{font-size:13px!important;line-height:1.7!important}
+  .cta{padding:82px 20px!important}
+  .cta h2{font-size:42px!important;line-height:1.02!important}
+  .cta p:not(.eyebrow){font-size:14px!important;line-height:1.7!important}
+  footer{padding:34px 20px 92px!important}
+  .float{right:16px!important;bottom:16px!important;width:54px!important;height:54px!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important}
+}
+@media(max-width:560px){
+  .hero-copy{padding-bottom:58px!important}
+  .hero h1{font-size:53px!important}
+  .actions{grid-template-columns:1fr!important}
+  .btn{width:100%!important}
+  .intro h2,.craft h2,.feature h2,.faq h2{font-size:34px!important}
+  .section-head h2{font-size:32px!important}
+}
+/* smoother touch / reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+@media(max-width:900px) and (pointer:coarse){
+  .card:hover{transform:none!important;border-color:rgba(214,179,106,.12)!important;box-shadow:0 15px 45px rgba(0,0,0,.28)!important}
+  .card:hover .card-img img{transform:none!important}
+  .btn:after{display:none!important}
+}
+
 </style></head><body>
 <header class="top"><div class="bar"><a class="brand" href="#home"><span>MR</span> INTERIOR</a><button class="menu" id="menu">☰</button><nav id="nav"><a href="#home">Home</a><a href="#collections">Furniture</a><a href="#craft">Craftsmanship</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="call" href="tel:+8801998918822">Call Now</a></nav></div></header>
 <main id="home">
