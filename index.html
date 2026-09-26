@@ -158,6 +158,33 @@ body{overflow-x:hidden}
   .btn:after{display:none!important}
 }
 
+/* === MOBILE NAV PREMIUM v2 === */
+@media(max-width:900px){
+  .top{z-index:9999!important}
+  .bar{position:relative!important}
+  nav{position:absolute!important;top:72px!important;left:14px!important;right:14px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding:12px!important;background:rgba(10,9,7,.94)!important;border:1px solid rgba(214,179,106,.22)!important;border-radius:18px!important;box-shadow:0 22px 60px rgba(0,0,0,.58),inset 0 1px rgba(255,255,255,.05)!important;backdrop-filter:blur(28px) saturate(150%)!important;-webkit-backdrop-filter:blur(28px) saturate(150%)!important;opacity:0!important;visibility:hidden!important;transform:translateY(-10px) scale(.985)!important;transform-origin:top center!important;transition:opacity .28s ease,transform .34s cubic-bezier(.22,1,.36,1),visibility .28s!important}
+  nav.is-open,nav.open,.top.nav-open nav{opacity:1!important;visibility:visible!important;transform:translateY(0) scale(1)!important}
+  nav:before{content:"MIR INTERIOR";display:block;padding:5px 12px 10px;color:#c9aa69;font-size:9px;letter-spacing:3px;font-weight:700;opacity:.75}
+  nav a{position:relative!important;display:flex!important;align-items:center!important;min-height:50px!important;padding:0 14px!important;border-radius:11px!important;color:#e9e0d2!important;font-size:12px!important;letter-spacing:2px!important;font-weight:600!important;text-decoration:none!important;transition:color .22s ease,background .22s ease,transform .22s ease,padding-left .22s ease!important}
+  nav a:before{content:"";width:3px;height:3px;border-radius:50%;background:#d6b36a;opacity:.35;margin-right:12px;transition:.22s ease}
+  nav a:after{content:"↗";position:absolute;right:15px;color:#d6b36a;font-size:13px;opacity:0;transform:translate(-4px,3px);transition:.22s ease}
+  nav a:active{transform:scale(.985)!important;background:rgba(214,179,106,.1)!important;color:#f3d89b!important}
+  nav a:active:before{opacity:1;box-shadow:0 0 10px rgba(214,179,106,.8)}
+  nav a:hover{background:rgba(214,179,106,.07)!important;color:#f3d89b!important;padding-left:18px!important}
+  nav a:hover:after{opacity:.8;transform:translate(0,0)}
+  .menu-btn{position:relative!important;z-index:10001!important;transition:transform .3s cubic-bezier(.22,1,.36,1),background .25s,border-color .25s!important}
+  .menu-btn:before,.menu-btn:after{content:"";position:absolute;width:16px;height:1.5px;background:#e5c57e;border-radius:2px;transition:transform .3s ease,opacity .2s ease!important}
+  .menu-btn:before{transform:translateY(-3px)}
+  .menu-btn:after{transform:translateY(3px)}
+  .menu-btn.is-open:before,.top.nav-open .menu-btn:before{transform:rotate(45deg)!important}
+  .menu-btn.is-open:after,.top.nav-open .menu-btn:after{transform:rotate(-45deg)!important}
+  .menu-btn.is-open,.top.nav-open .menu-btn{background:rgba(214,179,106,.12)!important;border-color:rgba(214,179,106,.5)!important;box-shadow:0 0 24px rgba(214,179,106,.14)!important}
+}
+@media(max-width:560px){
+  nav{left:10px!important;right:10px!important;top:68px!important;border-radius:16px!important;padding:10px!important}
+  nav a{min-height:52px!important}
+}
+
 </style></head><body>
 <header class="top"><div class="bar"><a class="brand" href="#home"><span>MR</span> INTERIOR</a><button class="menu" id="menu">☰</button><nav id="nav"><a href="#home">Home</a><a href="#collections">Furniture</a><a href="#craft">Craftsmanship</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="call" href="tel:+8801998918822">Call Now</a></nav></div></header>
 <main id="home">
