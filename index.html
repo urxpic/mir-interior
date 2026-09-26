@@ -70,4 +70,15 @@ footer{background:#050505;color:#a99b89;border-top:1px solid rgba(214,173,98,.22
 <script>
 document.querySelectorAll('.filter').forEach(function(btn){btn.onclick=function(){document.querySelectorAll('.filter').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');var f=btn.dataset.filter;document.querySelectorAll('.card').forEach(function(c){c.style.display=(f==='all'||c.dataset.cat===f)?'block':'none'})}});
 document.getElementById('menu').onclick=function(){var n=document.getElementById('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='66px';n.style.right='0';n.style.background='#17130f';n.style.padding='20px';n.style.flexDirection='column';n.style.alignItems='stretch'};
+</script><div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Product image preview"><button class="close" id="imageModalClose" aria-label="Close">×</button><img id="imageModalImg" alt="MIR INTERIOR product preview"><div class="hint">Tap outside or × to close</div></div><script>
+(function(){
+var modal=document.getElementById('imageModal'), preview=document.getElementById('imageModalImg'), close=document.getElementById('imageModalClose');
+document.querySelectorAll('.card-img img').forEach(function(img){
+  img.addEventListener('click',function(){preview.src=img.src;preview.alt=img.alt||'MIR INTERIOR product';modal.classList.add('open');document.body.style.overflow='hidden';});
+});
+function hide(){modal.classList.remove('open');preview.src='';document.body.style.overflow='';}
+close.addEventListener('click',hide);
+modal.addEventListener('click',function(e){if(e.target===modal)hide();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')hide();});
+})();
 </script></body></html>
