@@ -31,6 +31,24 @@
 .zoom-controls button{width:46px;height:42px;border:1px solid #b18a52;background:#17130f;color:#fff;border-radius:8px;font-size:20px;cursor:pointer}
 .zoom-hint{position:fixed;top:22px;left:50%;transform:translateX(-50%);color:#eee;font-size:12px;opacity:.75;pointer-events:none;z-index:1001}
 @media(max-width:560px){.zoom-overlay{padding:8px}.zoom-image{max-width:98vw;max-height:88vh}.zoom-hint{top:12px;font-size:11px}.zoom-controls{bottom:12px}}
+
+/* MIR INTERIOR — luxury showroom polish */
+body{background:#080604;color:#f5efe5}
+.top{background:rgba(10,7,5,.94);backdrop-filter:blur(14px);box-shadow:0 10px 35px rgba(0,0,0,.35)}
+.bar{max-width:1360px}.brand{font-size:29px;letter-spacing:3px}.brand span{color:#e0b875}
+nav a{transition:color .25s,opacity .25s}nav a:hover{color:#e0b875}.call{border-color:#d2ad72;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.hero{height:min(820px,88vh);min-height:650px}.hero-bg{filter:saturate(.9) contrast(1.06);background-image:linear-gradient(90deg,rgba(7,4,2,.94),rgba(12,8,5,.62) 48%,rgba(12,8,5,.18)),var(--hero)}
+.hero-copy{padding-top:clamp(145px,19vh,210px)}.eyebrow{letter-spacing:4px}.hero h1{text-shadow:0 8px 30px rgba(0,0,0,.4)}
+.btn{transition:transform .25s,background .25s,box-shadow .25s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(210,173,114,.18)}.btn.gold{background:linear-gradient(135deg,#d9b779,#a97b3f)}
+.intro{padding-top:125px;padding-bottom:105px}.intro h2,.section-head h2,.craft h2,.feature h2,.faq h2,.cta h2{letter-spacing:.2px}
+.shop{background:linear-gradient(180deg,#110d09,#0b0806);padding-top:105px}.section-head{margin-bottom:55px}.section-head h2{color:#f7f0e6}
+.card,.product-card,.item,.tile{border-color:#3e3328;box-shadow:0 18px 55px rgba(0,0,0,.22)}
+.card:hover,.product-card:hover,.item:hover,.tile:hover{box-shadow:0 24px 70px rgba(0,0,0,.38)}
+img{display:block;max-width:100%}
+.feature,.craft,.faq,.cta{background:#0b0806!important}.feature{border-top:1px solid #2b231b}.craft{border-top:1px solid #2b231b}.faq{border-top:1px solid #2b231b}
+.cta{position:relative;overflow:hidden;border-top:1px solid #3b2e21;border-bottom:1px solid #3b2e21}.cta:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(210,173,114,.12),transparent 45%);pointer-events:none}
+footer{background:#060403!important;border-top:1px solid #33281e}
+@media(max-width:800px){.bar{height:68px;padding:0 18px}.brand{font-size:25px}nav{gap:12px}.hero{min-height:620px;height:78vh}.hero-copy{padding:130px 20px 60px}.hero h1{font-size:clamp(48px,15vw,72px)}.intro{padding:85px 20px}.shop{padding:75px 18px}.section-head{margin-bottom:35px}}
 </style><style id="mir-premium-v2">
 :root{--mir-gold:#d6b36a;--mir-gold2:#f1d79a;--mir-dark:#090807}
 html{scroll-behavior:smooth}body{background:var(--mir-dark)}
